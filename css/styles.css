@@ -27,6 +27,7 @@ ul {
 }
 .backround {
   background: var(--seventh-color);
+  background-image: url(../images/mainhtml.png);
 }
 
 .bigtext {
@@ -138,6 +139,7 @@ ul {
 
 .list {
   display: flex;
+  justify-content: center;
 }
 .contact {
   text-decoration: none;
@@ -250,19 +252,15 @@ ul {
   display: flex;
   align-items: center;
 }
+.social-list-item:hover,
+.social-list-item:focus {
+}
 .social-list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-/* .social-icon {
-
-  width: 20px;
-  height: 20px;
-  align-items: center;
-  justify-content: center;
-} */
 
 .social-list-link {
   display: flex;
@@ -272,6 +270,12 @@ ul {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  fill: #afb1b8;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--main-color);
+  fill: #fff;
 }
 
 .margin-customers {
