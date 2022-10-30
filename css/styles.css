@@ -1,0 +1,357 @@
+:root {
+  --main-color: #2196f3;
+  --secondary-color: white;
+  --third-color: #757575;
+  --fourth-color: #ffffff;
+  --fifth-color: #212121;
+  --sixth-color: #f5f4fa;
+  --seventh-color: #2f303a;
+  --eighth-color: #e5e5e5;
+  --nineth-color: #000000;
+  --tenth-color: black;
+  --border-color: #eeeeee;
+  --headerborder-color: #ececec;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mainelement {
+  font-family: "Roboto", sans-serif;
+  color: var(--fifth-color);
+  background-color: var(--sixth-color);
+  letter-spacing: 0.03em;
+}
+.backround {
+  background: var(--seventh-color);
+}
+
+.bigtext {
+  font-size: 44px;
+  color: var(--secondary-color);
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  max-width: 696px;
+}
+.button-main {
+  background-color: var(--main-color);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: var(--seventh-color);
+  cursor: pointer;
+  font-family: inherit;
+}
+.button-portfolio {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: var(--eighth-color);
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.lorem {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.headtwo {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+}
+.descriptionlorem {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--third-color);
+}
+
+.membersname {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.workofmembers {
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--third-color);
+}
+
+.button-portfolio:hover {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+}
+
+.infolist {
+  text-decoration: none;
+  color: var(--fifth-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  /* margin: 46px; */
+}
+
+.colorgrey {
+  color: var(--third-color);
+}
+
+.navigationlist {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+}
+
+.navigationlist > .infolist {
+  color: var(--tenth-color);
+}
+.logo,
+.logo-footer {
+  font-size: 26px;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+}
+.logo {
+  color: var(--fifth-color);
+}
+.logo-footer {
+  color: var(--secondary-color);
+}
+
+.logo > .blue,
+.logo-footer > .blue {
+  color: var(--main-color);
+}
+
+.list {
+  display: flex;
+}
+.contact {
+  text-decoration: none;
+  color: var(--third-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.17;
+}
+.contact:hover {
+  color: var(--main-color);
+}
+
+.imagesdescription {
+  color: var(--fifth-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+.signdescription {
+  color: var(--third-color);
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.studioname {
+  color: var(--main-color);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.highlight {
+  color: var(--nineth-color);
+}
+.highlightwhite {
+  color: var(--fourth-color);
+}
+
+.topline {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.portoflio {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+}
+
+.hoverblue:hover,
+.hoverblue:focus,
+.hoverblue:active {
+  color: var(--main-color);
+}
+
+.buttons {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.cityadress {
+  color: var(--fourth-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.nonetextstyle {
+  font-style: inherit;
+}
+.container {
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.headerstyle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-box {
+  margin-right: 93px;
+}
+
+.headermargin {
+  margin-right: 46px;
+}
+
+.mailandtellist {
+  margin-left: 50px;
+}
+
+.lorem-margin {
+  margin-right: 30px;
+}
+
+.lorem-margin::last-child {
+  margin-right: 0;
+}
+.align-member {
+  text-align: center;
+}
+.social-list-item {
+  display: flex;
+  align-items: center;
+}
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+/* .social-icon {
+
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+} */
+
+.social-list-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.margin-customers {
+  margin-right: 30px;
+}
+.margin-customers::last-child {
+  margin-right: 0;
+}
+
+/* .containter {
+  box-sizing: border-box;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+} */
+/* .logo-box {
+  display: flex;
+} */
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.picture-margin {
+  margin-right: 30px;
+}
+
+.picture-margin::last-child {
+  margin-right: 0;
+}
+.buttons-portfolio {
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.buttons-margin {
+  margin-right: 8px;
+}
+.buttons-margin ::last-child {
+  margin-right: 0;
+}
+.images-project {
+  flex-wrap: wrap;
+  padding-top: 34px;
+  padding-bottom: 94px;
+}
+
+.images-margin {
+  margin-right: 30px;
+  border: 1px solid var(--border-color);
+}
+.thirdimages-margin {
+  margin-right: 0;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.header-border {
+  border-bottom: 1px solid var(--headerborder-color);
+}
+
+.our-customers {
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Dzięki temu mam w poziomie nazwy */
+/* .list li {
+  display: inline;
+} */
