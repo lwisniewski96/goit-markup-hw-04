@@ -289,9 +289,11 @@ ul {
   margin: 0 auto;
   display: flex;
 } */
-/* .logo-box {
-  display: flex;
-} */
+.logo-box {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 
 .hero {
   padding-top: 200px;
@@ -355,3 +357,19 @@ ul {
 /* .list li {
   display: inline;
 } */
+
+.padding-logo-footer {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.padding-adress-footer {
+  padding-top: 20px;
+  padding-bottom: 9px;
+}
+.padding-mail-footer {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.padding-tel-footer {
+  padding-bottom: 9px;
+}
