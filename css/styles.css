@@ -254,7 +254,12 @@ ul {
   margin-right: 0;
 }
 .lorem-backround {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f5f4fa;
+}
+.lorem-icons {
 }
 .align-member {
   text-align: center;
@@ -376,6 +381,7 @@ ul {
 .padding-logo-footer {
   padding-top: 60px;
   padding-bottom: 20px;
+  display: inline-block;
 }
 .padding-adress-footer {
   padding-top: 20px;
@@ -389,13 +395,16 @@ ul {
   padding-bottom: 9px;
 }
 
-.footer-joinus-section {
+.footer-container {
   display: flex;
-  list-style-type: none;
-  justify-content: center;
+}
+
+.footer-joinus-section {
+  list-style: none;
+  display: inline-block;
 }
 
 .footer-joinus-icons {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
 }
