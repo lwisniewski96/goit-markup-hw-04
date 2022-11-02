@@ -27,7 +27,11 @@ ul {
 }
 .backround {
   background: var(--seventh-color);
-  background-image: url(../images/mainhtml.png);
+  background-image: url(../images/mainhtml.jpg);
+  background-size: cover;
+}
+.backround-footer {
+  background: var(--seventh-color);
 }
 
 .bigtext {
@@ -235,7 +239,11 @@ ul {
 }
 
 .mailandtellist {
+  display: flex;
   margin-left: 50px;
+}
+.nav-icons::before {
+  margin-right: 10px;
 }
 
 .lorem-margin {
@@ -244,6 +252,9 @@ ul {
 
 .lorem-margin::last-child {
   margin-right: 0;
+}
+.lorem-backround {
+  background-color: #f5f4fa;
 }
 .align-member {
   text-align: center;
@@ -376,4 +387,15 @@ ul {
 }
 .padding-tel-footer {
   padding-bottom: 9px;
+}
+
+.footer-joinus-section {
+  display: flex;
+  list-style-type: none;
+}
+
+.footer-joinus-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
