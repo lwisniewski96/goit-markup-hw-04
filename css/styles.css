@@ -22,7 +22,7 @@ ul {
 .mainelement {
   font-family: "Roboto", sans-serif;
   color: var(--fifth-color);
-  background-color: var(--sixth-color);
+  background-color: var(--eighth-color);
   letter-spacing: 0.03em;
 }
 .backround {
@@ -392,10 +392,10 @@ ul {
 .footer-joinus-section {
   display: flex;
   list-style-type: none;
+  justify-content: center;
 }
 
 .footer-joinus-icons {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
