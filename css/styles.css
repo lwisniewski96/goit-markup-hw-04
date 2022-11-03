@@ -401,10 +401,14 @@ ul {
 
 .footer-joinus-section {
   list-style: none;
-  display: inline-block;
+  padding-top: 72px;
+  margin-left: 172px;
 }
 
 .footer-joinus-icons {
-  /* display: flex; */
-  /* justify-content: space-between; */
+  display: inline-flex;
+  margin-top: 20px;
+}
+.join-us-text {
+  color: var(--fourth-color);
 }
