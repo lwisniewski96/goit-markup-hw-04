@@ -258,6 +258,7 @@ ul {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 .headerstyle {
   display: flex;
@@ -336,7 +337,7 @@ ul {
 .margin-customers {
   margin-right: 30px;
 }
-.margin-customers::last-child {
+.margin-customers:last-child {
   margin-right: 0;
 }
 
@@ -447,7 +448,9 @@ ul {
 .join-us-text {
   color: var(--fourth-color);
 }
-
+.footer-joinus-link svg {
+  fill: var(--fourth-color);
+}
 .footer-joinus-margin {
   margin-right: 10px;
 }
@@ -480,8 +483,19 @@ ul {
   height: 92px;
   padding-left: 32px;
   padding-right: 32px;
+  box-sizing: border-box;
+}
+
+.customer svg {
+  fill: #afb1b8;
+}
+
+.customer:hover,
+.customer:focus {
+  border-color: var(--main-color);
 }
 
 .customer:hover svg,
 .customer:focus svg {
+  fill: var(--main-color);
 }
