@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,10 +16,14 @@
     />
     <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="mainelement">
+  <body>
     <header class="header-border">
       <div class="container headerstyle">
         <nav class="navigationlist">
@@ -41,7 +44,6 @@
             </li>
           </ul>
         </nav>
-        <!-- <div class="list-box"> -->
         <ul class="list">
           <li class="mailandtellist">
             <a
@@ -75,8 +77,7 @@
     <main>
       <section class="section">
         <div class="container">
-          <!-- <div class="allbuttons-portoflio"> -->
-          <ul class="list buttons-portfolio">
+          <ul class="buttons-portfolio">
             <li class="buttons-margin">
               <button type="button" class="button-portfolio">Wszystkie</button>
             </li>
@@ -94,102 +95,118 @@
             </li>
           </ul>
         </div>
-        <!-- </div> -->
-      </section>
-      <section class="section">
         <div class="container">
-          <!-- <div class="allimagesproject"> -->
           <ul class="list images-project">
-            <li class="images-margin">
+            <li class="project">
               <img
                 src="images/technocracks.jpg"
                 alt="webpage"
                 width="370"
                 height="294"
               />
-              <p class="imagesdescription">Technotracks</p>
-              <p class="signdescription">Strona internetowa</p>
+              <div class="project-border">
+                <p class="imagesdescription">Technotracks</p>
+                <p class="signdescription">Strona internetowa</p>
+              </div>
             </li>
-            <li class="images-margin">
+            <li class="project">
               <img
                 src="images/neworleansvs.jpg"
                 alt="basketballmatch"
                 width="370"
                 height="294"
               />
-              <p class="imagesdescription">Grafika New Orlean vs Golden Star</p>
-              <p class="signdescription">Dizajn</p>
+              <div class="project-border">
+                <p class="imagesdescription">
+                  Grafika New Orlean vs Golden Star
+                </p>
+                <p class="signdescription">Dizajn</p>
+              </div>
             </li>
-            <li class="thirdimages-margin">
+            <li class="project">
               <img
                 src="images/seafoodrest.jpg"
                 alt="seafoodlogotype"
                 width="370"
                 height="294"
               />
-              <p class="imagesdescription">Restauracja Seafood</p>
-              <p class="signdescription">Aplikacja</p>
+              <div class="project-border">
+                <p class="imagesdescription">Restauracja Seafood</p>
+                <p class="signdescription">Aplikacja</p>
+              </div>
             </li>
-            <li class="images-margin">
+            <li class="project">
               <img
                 src="images/projectprime.jpg"
                 alt="headphonespicture"
                 width="370"
                 height="294"
               />
-              <p class="imagesdescription">Project Prime</p>
-              <p class="signdescription">Marketing</p>
+              <div class="project-border">
+                <p class="imagesdescription">Project Prime</p>
+                <p class="signdescription">Marketing</p>
+              </div>
             </li>
-            <li class="images-margin">
+            <li class="project">
               <img
                 src="images/projectboxes.jpg"
                 alt="twodiffboxes"
                 width="370"
                 height="294"
               />
-              <p class="imagesdescription">Project Boxes</p>
-              <p class="signdescription">Aplikacja</p>
+              <div class="project-border">
+                <p class="imagesdescription">Project Boxes</p>
+                <p class="signdescription">Aplikacja</p>
+              </div>
             </li>
 
-            <li class="thirdimages-margin">
+            <li class="project">
               <img
                 src="images/inspirationhas.jpg"
                 alt="darthemeondesktop"
                 width="370"
                 height="294"
               />
-              <p class="imagesdescription">Inspiration has no borders</p>
-              <p class="signdescription">Strona internetowa</p>
+              <div class="project-border">
+                <p class="imagesdescription">Inspiration has no borders</p>
+                <p class="signdescription">Strona internetowa</p>
+              </div>
             </li>
-            <li class="images-margin">
+            <li class="project">
               <img
                 src="images/magazynlimited.jpg"
                 alt="openmagazine"
                 width="370"
                 height="294"
               />
-              <p class="imagesdescription">Magazyn Limited Edition</p>
-              <p class="signdescription">Dizajn</p>
+              <div class="project-border">
+                <p class="imagesdescription">Magazyn Limited Edition</p>
+                <p class="signdescription">Dizajn</p>
+              </div>
             </li>
-            <li class="images-margin">
+            <li class="project">
               <img
                 src="images/projectlab.jpg"
                 alt="labeltag"
                 width="370"
                 height="294"
               />
-              <p class="imagesdescription">Project LAB</p>
-              <p class="signdescription">Marketing</p>
+              <div class="project-border">
+                <p class="imagesdescription">Project LAB</p>
+                <p class="signdescription">Marketing</p>
+              </div>
             </li>
-            <li class="thirdimages-margin">
+            <li class="project">
               <img
                 src="images/growingbusiness.jpg"
                 alt="growingbusinesspageonlaptop"
                 width="370"
                 height="294"
               />
-              <p class="imagesdescription">Growing Business</p>
-              <p class="signdescription">Aplikacja</p>
+              <div class="project-border">
+                <p class="imagesdescription">Growing Business</p>
+                <p class="signdescription">Aplikacja</p>
+              </div>
             </li>
           </ul>
         </div>
