@@ -34,13 +34,117 @@ h6,
 p {
   margin: 0;
 }
+/* START HEADER */
+.studioname {
+  color: var(--main-color);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.container {
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.headerstyle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigationlist {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+}
+.navigationlist > .infolist {
+  color: var(--tenth-color);
+}
+.logo-box {
+  margin-right: 93px;
+}
+.logo,
+.logo-footer {
+  font-size: 26px;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+}
+.logo {
+  color: var(--fifth-color);
+}
+.logo-footer {
+  color: var(--secondary-color);
+}
+
+.logo > .blue,
+.logo-footer > .blue {
+  color: var(--main-color);
+}
+.header-nav-list {
+  display: flex;
+  gap: 36px;
+}
+
+.header-contact-list {
+  display: flex;
+  gap: 30px;
+}
+.topline {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.headermargin {
+  margin-right: 46px;
+}
+.mailandtellist {
+  display: flex;
+  margin-left: 50px;
+}
+
+.infolist {
+  text-decoration: none;
+  color: var(--fifth-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  display: flex;
+  align-items: center;
+}
+.infolist svg {
+  margin-right: 10px;
+  fill: var(--third-color);
+}
+.infolist:hover svg,
+.infolist:focus svg {
+  fill: var(--main-color);
+}
+
+.colorgrey {
+  color: var(--third-color);
+}
+
+/* END HEADER */
+
+/* START MAIN */
 .backround {
   background: var(--seventh-color);
   background-image: url(../images/mainhtml.jpg);
   background-size: cover;
 }
-.backround-footer {
-  background: var(--seventh-color);
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .bigtext {
@@ -77,7 +181,29 @@ p {
   border-radius: 4px;
   padding: 6px 22px;
 }
+.button-portfolio:hover {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+}
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.lorems-list {
+  display: flex;
+  gap: 30px;
+}
+.lorem-backround {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 4px;
+}
 .lorem {
   font-weight: 700;
   font-size: 14px;
@@ -85,11 +211,24 @@ p {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-
-.backround-ourteam {
-  background-color: #f5f4fa;
+.lorem-margin {
+  margin-right: 30px;
 }
 
+.lorem-margin:last-child {
+  margin-right: 0;
+}
+
+.lorem-icons {
+}
+.descriptionlorem {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--third-color);
+}
+.whatwedo {
+  padding-top: 0;
+}
 .headtwo {
   font-size: 36px;
   font-weight: 700;
@@ -97,10 +236,23 @@ p {
   text-align: center;
   margin-bottom: 50px;
 }
-.descriptionlorem {
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--third-color);
+
+.list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.pictures-list {
+  display: flex;
+  gap: 30px;
+}
+
+.backround-ourteam {
+  background-color: #f5f4fa;
+}
+.team-list {
+  display: flex;
+  gap: 30px;
 }
 
 .member {
@@ -108,16 +260,13 @@ p {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
 }
 
-.picture-headtwo-margin {
-  margin-right: 30px;
+.align-member {
+  text-align: center;
+  padding: 30px 0px;
 }
 
-.picture-headtwo-margin:last-child {
-  margin-right: 0;
-}
 .membersname {
   font-weight: 500;
   font-size: 16px;
@@ -131,200 +280,6 @@ p {
   color: var(--third-color);
 }
 
-.button-portfolio:hover {
-  background-color: var(--main-color);
-  color: var(--secondary-color);
-}
-
-.infolist {
-  text-decoration: none;
-  color: var(--fifth-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  display: flex;
-  align-items: center;
-  /* margin: 46px; */
-}
-.infolist svg {
-  margin-right: 10px;
-  fill: var(--third-color);
-}
-.team-list {
-  display: flex;
-  gap: 30px;
-}
-
-.infolist:hover svg,
-.infolist:focus svg {
-  fill: var(--main-color);
-}
-
-.colorgrey {
-  color: var(--third-color);
-}
-
-.navigationlist {
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 1.17;
-  display: flex;
-  align-items: center;
-}
-
-.navigationlist > .infolist {
-  color: var(--tenth-color);
-}
-.logo,
-.logo-footer {
-  font-size: 26px;
-  font-family: "Raleway", sans-serif;
-  text-decoration: none;
-  font-weight: 700;
-}
-.logo {
-  color: var(--fifth-color);
-}
-.logo-footer {
-  color: var(--secondary-color);
-}
-
-.logo > .blue,
-.logo-footer > .blue {
-  color: var(--main-color);
-}
-
-.list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-.contact {
-  text-decoration: none;
-  color: var(--third-color);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.17;
-}
-.contact:hover {
-  color: var(--main-color);
-}
-
-.imagesdescription {
-  color: var(--fifth-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  padding-bottom: 4px;
-}
-.signdescription {
-  color: var(--third-color);
-
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-.studioname {
-  color: var(--main-color);
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-.highlight {
-  color: var(--nineth-color);
-}
-.highlightwhite {
-  color: var(--fourth-color);
-}
-
-.topline {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-}
-
-.portoflio {
-  color: var(--main-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.02em;
-}
-
-.hoverblue:hover,
-.hoverblue:focus,
-.hoverblue:active {
-  color: var(--main-color);
-}
-
-.buttons {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-}
-
-.cityadress {
-  color: var(--fourth-color);
-
-  font-size: 14px;
-  line-height: 1.71;
-}
-
-.nonetextstyle {
-  font-style: inherit;
-}
-.container {
-  padding: 0 15px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-.headerstyle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo-box {
-  margin-right: 93px;
-}
-
-.headermargin {
-  margin-right: 46px;
-}
-
-.mailandtellist {
-  display: flex;
-  margin-left: 50px;
-}
-.nav-icons::before {
-  margin-right: 10px;
-}
-
-.lorem-margin {
-  margin-right: 30px;
-}
-
-.lorem-margin:last-child {
-  margin-right: 0;
-}
-.lorem-backround {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5f4fa;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border-radius: 4px;
-}
-.lorem-icons {
-}
-.align-member {
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 16px;
-}
 .social-list-item {
   display: flex;
   align-items: center;
@@ -360,6 +315,64 @@ p {
   fill: var(--fourth-color);
 }
 
+.portfolio-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contact {
+  text-decoration: none;
+  color: var(--third-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.17;
+}
+.contact:hover {
+  color: var(--main-color);
+}
+
+.imagesdescription {
+  color: var(--fifth-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  padding-bottom: 4px;
+}
+.signdescription {
+  color: var(--third-color);
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.highlight {
+  color: var(--nineth-color);
+}
+.highlightwhite {
+  color: var(--fourth-color);
+}
+
+.portoflio {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+}
+
+.hoverblue:hover,
+.hoverblue:focus,
+.hoverblue:active {
+  color: var(--main-color);
+}
+
+.buttons {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
 .margin-customers {
   margin-right: 30px;
 }
@@ -367,14 +380,6 @@ p {
   margin-right: 0;
 }
 
-/* .containter {
-  box-sizing: border-box;
-  padding: 0 15px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-} */
 .logo-box {
   margin-right: 93px;
   padding-top: 24px;
@@ -384,13 +389,6 @@ p {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-}
-
-.hero-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 .buttons-portfolio {
@@ -404,9 +402,7 @@ p {
 .buttons-margin ::last-child {
   margin-right: 0;
 }
-.images-project {
-  flex-wrap: wrap;
-}
+
 .project {
   display: flex;
   flex-direction: column;
@@ -414,11 +410,6 @@ p {
 .project-border {
   border: 1px solid var(--border-color);
   padding: 20px 24px;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .header-border {
@@ -430,10 +421,54 @@ p {
   font-weight: 700;
 }
 
-/* Dzięki temu mam w poziomie nazwy */
-/* .list li {
-  display: inline;
-} */
+.nav-icons::before {
+  margin-right: 10px;
+}
+
+.customer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  padding-left: 32px;
+  padding-right: 32px;
+  box-sizing: border-box;
+}
+
+.customer svg {
+  fill: #afb1b8;
+}
+
+.customer:hover,
+.customer:focus {
+  border-color: var(--main-color);
+}
+
+.customer:hover svg,
+.customer:focus svg {
+  fill: var(--main-color);
+}
+.nonetextstyle {
+  font-style: inherit;
+}
+
+/* END MAIN */
+
+/* FOOTER START */
+
+.backround-footer {
+  background: var(--seventh-color);
+}
+
+.cityadress {
+  color: var(--fourth-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+}
 
 .padding-logo-footer {
   padding-top: 60px;
@@ -492,35 +527,4 @@ p {
 .footer-joinus-link:hover,
 .footer-joinus-link:focus {
   background-color: var(--main-color);
-}
-
-.customer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  width: 170px;
-  height: 92px;
-  padding-left: 32px;
-  padding-right: 32px;
-  box-sizing: border-box;
-}
-
-.customer svg {
-  fill: #afb1b8;
-}
-
-.customer:hover,
-.customer:focus {
-  border-color: var(--main-color);
-}
-
-.customer:hover svg,
-.customer:focus svg {
-  fill: var(--main-color);
-}
-
-.whatwedo {
-  padding-top: 0;
 }
