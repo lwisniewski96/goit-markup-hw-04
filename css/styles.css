@@ -23,6 +23,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--fifth-color);
   letter-spacing: 0.03em;
+  font-size: 14px;
 }
 
 h1,
@@ -33,6 +34,11 @@ h5,
 h6,
 p {
   margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* START HEADER */
 .studioname {
@@ -45,14 +51,14 @@ p {
 
 .container {
   padding: 0 15px;
-  width: 100%;
-  max-width: 1200px;
+  /* width: 100%; */
+  width: 1200px;
   margin: 0 auto;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 .headerstyle {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 .navigationlist {
@@ -88,12 +94,13 @@ p {
 }
 .header-nav-list {
   display: flex;
-  gap: 36px;
+  gap: 50px;
 }
 
 .header-contact-list {
   display: flex;
   gap: 30px;
+  margin-left: auto;
 }
 .topline {
   font-weight: 500;
@@ -102,11 +109,11 @@ p {
 }
 
 .headermargin {
-  margin-right: 46px;
+  /* margin-right: 46px; */
 }
 .mailandtellist {
   display: flex;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 
 .infolist {
@@ -120,12 +127,12 @@ p {
 }
 .infolist svg {
   margin-right: 10px;
-  fill: var(--third-color);
+  fill: currentColor;
 }
-.infolist:hover svg,
+/* .infolist:hover svg,
 .infolist:focus svg {
   fill: var(--main-color);
-}
+} */
 
 .colorgrey {
   color: var(--third-color);
@@ -136,16 +143,23 @@ p {
 /* START MAIN */
 .backround {
   background: var(--seventh-color);
-  background-image: url(../images/mainhtml.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/mainhtml.jpg);
   background-size: cover;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
 }
 
-.hero-inner {
+/* .hero-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
+} */
 
 .bigtext {
   font-size: 44px;
@@ -153,7 +167,8 @@ p {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  max-width: 696px;
+  width: 696px;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 .button-main {
@@ -174,7 +189,7 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  background-color: var(--eighth-color);
+  background-color: var(--sixth-color);
   border: none;
   cursor: pointer;
   font-family: inherit;
@@ -184,6 +199,8 @@ p {
 .button-portfolio:hover {
   background-color: var(--main-color);
   color: var(--secondary-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .section {
@@ -200,8 +217,9 @@ p {
   justify-content: center;
   align-items: center;
   background-color: #f5f4fa;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  /* padding-top: 25px;
+  padding-bottom: 25px; */
+  height: 120px;
   border-radius: 4px;
 }
 .lorem {
@@ -209,7 +227,7 @@ p {
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 .lorem-margin {
   margin-right: 30px;
@@ -222,7 +240,6 @@ p {
 .lorem-icons {
 }
 .descriptionlorem {
-  font-size: 14px;
   line-height: 1.71;
   color: var(--third-color);
 }
@@ -271,19 +288,20 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .workofmembers {
   font-size: 16px;
   line-height: 1.18;
   color: var(--third-color);
+  margin-bottom: 16px;
 }
-
+/* 
 .social-list-item {
   display: flex;
   align-items: center;
-}
+} */
 .social-list-item:hover,
 .social-list-item:focus {
 }
@@ -301,18 +319,19 @@ p {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  color: #afb1b8;
 }
-.social-list-link:hover,
-.social-list-link:focus {
+.social-list-link:hover {
+  /* .social-list-link:focus { */
   background-color: var(--main-color);
-  /* fill: #fff; */
+  color: #fff;
 }
 .social-icon {
-  fill: #afb1b8;
+  fill: currentColor;
 }
-.social-list-link:hover svg,
-.social-list-link:focus svg {
-  fill: var(--fourth-color);
+.social-list-link:hover svg {
+  /* .social-list-link:focus svg { */
+  /* fill: var(--fourth-color); */
 }
 
 .portfolio-list {
@@ -389,14 +408,15 @@ p {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
 
 .buttons-portfolio {
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   display: flex;
 }
-.buttons-margin {
+.buttons-margin:not(:last-child) {
   margin-right: 8px;
 }
 .buttons-margin ::last-child {
@@ -404,8 +424,8 @@ p {
 }
 
 .project {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
 }
 .project-border {
   border: 1px solid var(--border-color);
@@ -429,22 +449,23 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #afb1b8;
+  border: 1px solid currentColor;
+  color: #afb1b8;
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  padding-left: 32px;
+  /* padding-left: 32px;
   padding-right: 32px;
-  box-sizing: border-box;
+  box-sizing: border-box; */
 }
 
 .customer svg {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
-.customer:hover,
-.customer:focus {
-  border-color: var(--main-color);
+.customer:hover {
+  /* .customer:focus { */
+  color: var(--main-color);
 }
 
 .customer:hover svg,
@@ -461,6 +482,7 @@ p {
 
 .backround-footer {
   background: var(--seventh-color);
+  padding: 60px 0;
 }
 
 .cityadress {
@@ -470,11 +492,11 @@ p {
   line-height: 1.71;
 }
 
-.padding-logo-footer {
+/* .padding-logo-footer {
   padding-top: 60px;
   padding-bottom: 20px;
   display: inline-block;
-}
+} */
 .padding-adress-footer {
   padding-top: 20px;
   padding-bottom: 9px;
@@ -491,18 +513,19 @@ p {
 }
 
 .footer-joinus-section {
-  list-style: none;
-  padding-top: 72px;
-  margin-left: 172px;
+  /* list-style: none; */
+  /* padding-top: 72px; */
+  margin-left: 70px;
 }
 
 .footer-joinus-icons {
-  display: inline-flex;
+  display: flex;
   margin-top: 20px;
 }
 .join-us-text {
   color: var(--fourth-color);
-  font-size: 14px;
+  font-weight: 700px;
+  /* font-size: 14px; */
 }
 .footer-joinus-link svg {
   fill: var(--fourth-color);
@@ -527,4 +550,6 @@ p {
 .footer-joinus-link:hover,
 .footer-joinus-link:focus {
   background-color: var(--main-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
