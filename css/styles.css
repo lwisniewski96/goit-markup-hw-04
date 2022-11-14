@@ -191,6 +191,7 @@ img {
   line-height: 1.6;
   background-color: var(--sixth-color);
   border: none;
+  letter-spacing: 00.03em;
   cursor: pointer;
   font-family: inherit;
   border-radius: 4px;
@@ -419,13 +420,20 @@ img {
 .buttons-margin:not(:last-child) {
   margin-right: 8px;
 }
-.buttons-margin ::last-child {
+.buttons-margin :last-child {
   margin-right: 0;
 }
 
-.project {
-  /* display: flex; */
-  /* flex-direction: column; */
+.project-link {
+  display: block;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  text-decoration-line: none;
+}
+
+.project-link:hover,
+.project-link:focus {
+  color: var(--main-color);
 }
 .project-border {
   border: 1px solid var(--border-color);
@@ -510,6 +518,7 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-joinus-section {
